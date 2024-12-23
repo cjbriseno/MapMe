@@ -6,23 +6,76 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EA4D59A12CFD57A400A77D81 /* MapboxNavigationCore in Frameworks */ = {isa = PBXBuildFile; productRef = EA4D59A02CFD57A400A77D81 /* MapboxNavigationCore */; };
+		EA4D59A32CFD57A400A77D81 /* MapboxNavigationUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = EA4D59A22CFD57A400A77D81 /* MapboxNavigationUIKit */; };
+		EAFDE2F42CF7DEB9009116D5 /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = EAFDE2F32CF7DEB9009116D5 /* MapboxMaps */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA47B7372D0C2D33001F3B0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA9F3E0C2CE70D37001B22A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA9F3E132CE70D37001B22A6;
+			remoteInfo = MapMe;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		EA47B7332D0C2D33001F3B0C /* GraphTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA9F3E142CE70D37001B22A6 /* MapMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		EAFC2B2C2D16EC3C00DE03B5 /* Exceptions for "MapMe" folder in "GraphTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SearchResultView.swift,
+			);
+			target = EA47B7322D0C2D33001F3B0C /* GraphTests */;
+		};
+		EAFDE2F12CF7DA22009116D5 /* Exceptions for "MapMe" folder in "MapMe" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = EA9F3E132CE70D37001B22A6 /* MapMe */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		EA47B7342D0C2D33001F3B0C /* GraphTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = GraphTests;
+			sourceTree = "<group>";
+		};
 		EA9F3E162CE70D37001B22A6 /* MapMe */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EAFDE2F12CF7DA22009116D5 /* Exceptions for "MapMe" folder in "MapMe" target */,
+				EAFC2B2C2D16EC3C00DE03B5 /* Exceptions for "MapMe" folder in "GraphTests" target */,
+			);
 			path = MapMe;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EA47B7302D0C2D33001F3B0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EA9F3E112CE70D37001B22A6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA4D59A32CFD57A400A77D81 /* MapboxNavigationUIKit in Frameworks */,
+				EA4D59A12CFD57A400A77D81 /* MapboxNavigationCore in Frameworks */,
+				EAFDE2F42CF7DEB9009116D5 /* MapboxMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				EA9F3E162CE70D37001B22A6 /* MapMe */,
+				EA47B7342D0C2D33001F3B0C /* GraphTests */,
+				EAFDE2F52CF7DF62009116D5 /* Frameworks */,
 				EA9F3E152CE70D37001B22A6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,13 +96,44 @@
 			isa = PBXGroup;
 			children = (
 				EA9F3E142CE70D37001B22A6 /* MapMe.app */,
+				EA47B7332D0C2D33001F3B0C /* GraphTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		EAFDE2F52CF7DF62009116D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		EA47B7322D0C2D33001F3B0C /* GraphTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA47B7392D0C2D33001F3B0C /* Build configuration list for PBXNativeTarget "GraphTests" */;
+			buildPhases = (
+				EA47B72F2D0C2D33001F3B0C /* Sources */,
+				EA47B7302D0C2D33001F3B0C /* Frameworks */,
+				EA47B7312D0C2D33001F3B0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA47B7382D0C2D33001F3B0C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EA47B7342D0C2D33001F3B0C /* GraphTests */,
+			);
+			name = GraphTests;
+			packageProductDependencies = (
+			);
+			productName = GraphTests;
+			productReference = EA47B7332D0C2D33001F3B0C /* GraphTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		EA9F3E132CE70D37001B22A6 /* MapMe */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA9F3E222CE70D37001B22A6 /* Build configuration list for PBXNativeTarget "MapMe" */;
@@ -65,6 +151,9 @@
 			);
 			name = MapMe;
 			packageProductDependencies = (
+				EAFDE2F32CF7DEB9009116D5 /* MapboxMaps */,
+				EA4D59A02CFD57A400A77D81 /* MapboxNavigationCore */,
+				EA4D59A22CFD57A400A77D81 /* MapboxNavigationUIKit */,
 			);
 			productName = MapMe;
 			productReference = EA9F3E142CE70D37001B22A6 /* MapMe.app */;
@@ -80,6 +169,10 @@
 				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
+					EA47B7322D0C2D33001F3B0C = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = EA9F3E132CE70D37001B22A6;
+					};
 					EA9F3E132CE70D37001B22A6 = {
 						CreatedOnToolsVersion = 16.1;
 					};
@@ -94,17 +187,29 @@
 			);
 			mainGroup = EA9F3E0B2CE70D37001B22A6;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				EAFDE2F22CF7DEB9009116D5 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
+				EA4D599F2CFD57A400A77D81 /* XCRemoteSwiftPackageReference "mapbox-navigation-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EA9F3E152CE70D37001B22A6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				EA9F3E132CE70D37001B22A6 /* MapMe */,
+				EA47B7322D0C2D33001F3B0C /* GraphTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EA47B7312D0C2D33001F3B0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EA9F3E122CE70D37001B22A6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +220,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EA47B72F2D0C2D33001F3B0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EA9F3E102CE70D37001B22A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +236,53 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		EA47B7382D0C2D33001F3B0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA9F3E132CE70D37001B22A6 /* MapMe */;
+			targetProxy = EA47B7372D0C2D33001F3B0C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		EA47B73A2D0C2D33001F3B0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J443VLSHGM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fr3shtricks.GraphTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MapMe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MapMe";
+			};
+			name = Debug;
+		};
+		EA47B73B2D0C2D33001F3B0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J443VLSHGM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fr3shtricks.GraphTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MapMe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MapMe";
+			};
+			name = Release;
+		};
 		EA9F3E202CE70D37001B22A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -255,11 +413,13 @@
 				DEVELOPMENT_TEAM = J443VLSHGM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MapMe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -268,7 +428,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fr3shtricks.MapMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -284,11 +444,13 @@
 				DEVELOPMENT_TEAM = J443VLSHGM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MapMe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,7 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fr3shtricks.MapMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -305,6 +467,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EA47B7392D0C2D33001F3B0C /* Build configuration list for PBXNativeTarget "GraphTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA47B73A2D0C2D33001F3B0C /* Debug */,
+				EA47B73B2D0C2D33001F3B0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EA9F3E0F2CE70D37001B22A6 /* Build configuration list for PBXProject "MapMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -324,6 +495,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EA4D599F2CFD57A400A77D81 /* XCRemoteSwiftPackageReference "mapbox-navigation-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mapbox/mapbox-navigation-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.5.0;
+			};
+		};
+		EAFDE2F22CF7DEB9009116D5 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mapbox/mapbox-maps-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EA4D59A02CFD57A400A77D81 /* MapboxNavigationCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA4D599F2CFD57A400A77D81 /* XCRemoteSwiftPackageReference "mapbox-navigation-ios" */;
+			productName = MapboxNavigationCore;
+		};
+		EA4D59A22CFD57A400A77D81 /* MapboxNavigationUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA4D599F2CFD57A400A77D81 /* XCRemoteSwiftPackageReference "mapbox-navigation-ios" */;
+			productName = MapboxNavigationUIKit;
+		};
+		EAFDE2F32CF7DEB9009116D5 /* MapboxMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EAFDE2F22CF7DEB9009116D5 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
+			productName = MapboxMaps;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EA9F3E0C2CE70D37001B22A6 /* Project object */;
 }

@@ -11,7 +11,10 @@ import SwiftUI
 struct MapMeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            //ContentView()
+            //TestView()
+            //MapViewControllerWrapper() // load UIKit ViewController
+            CustomStyleView()
         }
     }
 }

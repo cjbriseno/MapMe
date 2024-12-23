@@ -1,0 +1,78 @@
+{
+  "originHash" : "f650782c01d18e75d8337f6815ac2a52294444239347885d73551e28b1baa4d1",
+  "pins" : [
+    {
+      "identity" : "mapbox-common-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mapbox/mapbox-common-ios.git",
+      "state" : {
+        "revision" : "2b9ec86affbf41f0e800f0c1c96be31c02e6854f",
+        "version" : "24.8.0"
+      }
+    },
+    {
+      "identity" : "mapbox-core-maps-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mapbox/mapbox-core-maps-ios.git",
+      "state" : {
+        "revision" : "c8d61110fb8b9f6452060a1df65dfc494d30afb2",
+        "version" : "11.8.0"
+      }
+    },
+    {
+      "identity" : "mapbox-maps-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mapbox/mapbox-maps-ios.git",
+      "state" : {
+        "revision" : "77446b55e9e2bc5461fa3a8ca2e00feaeb7179f5",
+        "version" : "11.8.0"
+      }
+    },
+    {
+      "identity" : "mapbox-navigation-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mapbox/mapbox-navigation-ios.git",
+      "state" : {
+        "revision" : "fcd36383f6bfefe4e3bf81f6ae5932551fbc1c4a",
+        "version" : "3.5.0"
+      }
+    },
+    {
+      "identity" : "mapbox-navigation-native-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mapbox/mapbox-navigation-native-ios.git",
+      "state" : {
+        "revision" : "730e5fef0c4a0564bfbf58fce54914e9ede9f776",
+        "version" : "321.0.0"
+      }
+    },
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser",
+      "state" : {
+        "revision" : "41982a3656a71c768319979febd796c6fd111d5c",
+        "version" : "1.5.0"
+      }
+    },
+    {
+      "identity" : "swift-snapshot-testing",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-snapshot-testing.git",
+      "state" : {
+        "revision" : "26ed3a2b4a2df47917ca9b790a57f91285b923fb",
+        "version" : "1.12.0"
+      }
+    },
+    {
+      "identity" : "turf-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mapbox/turf-swift.git",
+      "state" : {
+        "revision" : "1997fb3c3dc0d8181690a1ec192ed907bcead9e8",
+        "version" : "3.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}
